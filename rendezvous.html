@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0C3320">
+    <title>Prendre RDV | Miralocks Lomé</title>
+    <meta name="description"
+        content="Réservez votre rendez-vous à Miralocks de Lomé. Formulaire en ligne, réponse rapide via WhatsApp.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Prendre RDV | Miralocks Lomé">
+    <meta property="og:description"
+        content="Réservez votre rendez-vous à Miralocks de Lomé. Formulaire en ligne, réponse rapide via WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_TG">
+    <meta name="geo.region" content="TG">
+    <meta name="geo.placename" content="Lomé, Togo">
+    <link rel="canonical" href="https://miralocks.com/rendezvous.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://mspgaewvgbaotclnhjvw.supabase.co">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        // Critical: masquer FOUC
+        document.documentElement.style.visibility = 'hidden';
+        window.addEventListener('DOMContentLoaded', () => document.documentElement.style.visibility = '');
+    </script>
+    <!-- Open Graph / WhatsApp preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Miralocks">
+    <meta property="og:image" content="https://miralocks.com/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://miralocks.com/assets/og-image.jpg">
+    <script src="js/seo-meta.js"></script>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Aller au contenu</a>
+    <div id="page-loader" role="status" aria-label="Chargement">
+        <div class="loader-logo"></div>
+    </div>
+    <nav class="nav" role="navigation" aria-label="Navigation principale">
+        <a href="index.html" class="nav-logo" aria-label="Miralocks — Accueil">
+            <picture>
+                <source srcset="assets/logo-transparent.webp" type="image/webp">
+                <img src="assets/logo-transparent.png" alt="Logo Miralocks" width="40" height="40"
+                    loading="eager" fetchpriority="high">
+            </picture>
+            <span>Miralocks</span>
+        </a>
+        <div class="nav-links" id="nav-links" role="menu">
+            <a href="index.html" class="">Accueil</a>
+            <a href="gallery.html" class="">Galerie</a>
+            <a href="avant-apres.html" class="">Avant/Après</a>
+            <a href="services.html" class="">Services</a>
+            <a href="faq.html" class="">FAQ</a>
+            <a href="blog.html" class="">Blog</a>
+            <a href="about.html" class="">À propos</a>
+            <a href="avis.html" class="">Avis</a>
+            <a href="contact.html" class="">Contact</a>
+            <a href="rendezvous.html" class="btn btn-or nav-cta">Réserver</a>
+        </div>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Changer le thème">
+                <i class="fas fa-moon"></i>
+            </button>
+            <span class="nav-divider"></span>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="page-pad"></div>
+
+
+    <div class="page-hero" id="main">
+        <h1 class="fade-in">Prendre Rendez-vous</h1>
+        <p class="fade-in">Réservez votre séance en quelques secondes</p>
+    </div>
+
+    <section class="section" aria-label="Formulaire de rendez-vous">
+        <div class="rdv-form fade-in">
+            <div style="background:#fff;border-radius:var(--rayon-lg);padding:2.5rem;box-shadow:var(--ombre)">
+                <form id="rdvForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="nom">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" class="form-control" placeholder="Votre nom" required
+                                autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="tel">Téléphone *</label>
+                            <input type="tel" id="tel" name="tel" class="form-control" placeholder="+228 XX XX XX XX"
+                                required autocomplete="tel">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="service">Service souhaité *</label>
+                        <select id="service" name="service" class="form-control" required>
+                            <option value="">Choisir un service…</option>
+                            <optgroup label="Soins">
+                                <option>Shampooing locks (2 000 FCFA)</option>
+                                <option>Shampooing + Massage (4 000 FCFA)</option>
+                                <option>Shampooing + Massage + Bain vapeur (5 000 FCFA)</option>
+                            </optgroup>
+                            <optgroup label="Entretien">
+                                <option>Resserrage standard moyen (8 000 FCFA)</option>
+                                <option>Resserrage standard mid (10 000 FCFA)</option>
+                                <option>Resserrage standard micro (12 000 FCFA)</option>
+                                <option>Resserrage enfants (7 000 FCFA)</option>
+                            </optgroup>
+                            <optgroup label="Création">
+                                <option>Crochet instantané moyen (25 000 FCFA)</option>
+                                <option>Crochet instantané mid (35 000 FCFA)</option>
+                                <option>Crochet instantané micro (60 000 FCFA)</option>
+                                <option>Interlocking Sisterlocks moyen (50 000 FCFA)</option>
+                                <option>Interlocking Sisterlocks mid (70 000 FCFA)</option>
+                                <option>Interlocking Sisterlocks micro (100 000 FCFA)</option>
+                                <option>Départ Twist moyen (20 000 FCFA)</option>
+                                <option>Départ Twist mid (30 000 FCFA)</option>
+                                <option>Départ Twist micro (45 000 FCFA)</option>
+                            </optgroup>
+                            <optgroup label="Finitions">
+                                <option>Teinture partielle (dès 5 000 FCFA)</option>
+                                <option>Défaire locks (dès 15 000 FCFA)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="date">Date souhaitée *</label>
+                            <input type="date" id="date" name="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="heure">Heure souhaitée</label>
+                            <select id="heure" name="heure" class="form-control">
+                                <option value="">Choisir…</option>
+                                <option>08:00</option>
+                                <option>09:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" class="form-control"
+                            placeholder="Informations complémentaires sur vos locks…" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-whatsapp" style="width:100%;padding:1rem">
+                        <i class="fab fa-whatsapp"></i> Envoyer via WhatsApp
+                    </button>
+                    <p style="text-align:center;font-size:.85rem;margin-top:1rem;opacity:0.8">
+                        Votre demande sera envoyée directement sur WhatsApp. Nous vous répondrons dans les 2h.
+                    </p>
+                </form>
+            </div>
+
+            <div
+                style="background:var(--vert);border-radius:var(--rayon-lg);padding:2rem;margin-top:2rem;color:rgba(250,250,248,.85)">
+                <h3 style="color:var(--or);margin-bottom:1rem">📍 Nos horaires</h3>
+                <p>Mardi – Samedi : <strong style="color:var(--or)">08h00 – 18h00</strong></p>
+                <p style="margin-top:.5rem">Fermé Dimanche et Lundi</p>
+                <hr style="border-color:rgba(201,168,76,.2);margin:1.25rem 0">
+                <p>📞 <a href="tel:+22897989001" style="color:var(--or)">+228 97 98 90 01</a></p>
+                <p style="margin-top:.5rem">📍 Agoè Cacaveli, près école La Source — Lomé</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/22897989001" class="whatsapp-float" aria-label="Contacter sur WhatsApp" target="_blank"
+        rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    <div class="cookie-banner" role="dialog" aria-label="Cookies">
+        <p class="cookie-text">Nous utilisons des cookies pour améliorer votre expérience. <a
+                href="confidentialite.html">En savoir plus</a></p>
+        <div class="cookie-btns">
+            <button class="btn btn-or cookie-accept" style="padding:.4rem 1rem;font-size:.85rem">Accepter</button>
+            <button class="btn btn-vert cookie-refuse" style="padding:.4rem 1rem;font-size:.85rem">Refuser</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">
+                    <picture>
+                        <source srcset="assets/logo-or.avif" type="image/avif">
+                        <source srcset="assets/logo-or.webp" type="image/webp"><img src="assets/logo-or.png"
+                            alt="Logo Miralocks" width="120" height="120" loading="lazy"
+                            style="filter:none;width:120px;height:auto">
+                    </picture>
+                </div>
+                <p class="footer-desc">Spécialiste des locks à Lomé, Togo. Expertise, passion et bienveillance pour
+                    sublimer vos cheveux naturels.</p>
+                <div class="footer-socials" style="margin-top:1.25rem">
+                    <a href="https://www.instagram.com/institut_Miralocks" target="_blank" rel="noopener"
+                        class="social-btn instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/mira.lachocote" target="_blank" rel="noopener"
+                        class="social-btn facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@institut_mira_locks228" target="_blank" rel="noopener"
+                        class="social-btn tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/22897989001" target="_blank" rel="noopener" class="social-btn whatsapp"
+                        aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="footer-heading">Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="avant-apres.html">Avant / Après</a></li>
+                    <li><a href="services.html">Services & Tarifs</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="avis.html">Témoignages</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-heading">Horaires</h3>
+                <ul class="footer-links">
+                    <li>Mardi – Vendredi : 08h00–18h00</li>
+                    <li>Samedi : 08h00–18h00</li>
+                    <li style="color:rgba(201,168,76,.6);margin-top:.5rem">Fermé Dimanche & Lundi</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-heading">Contact</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone" style="color:var(--or);width:18px"></i> <a href="tel:+22897989001" style="color:inherit;text-decoration:none;">+228 97 98 90 01</a></li>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--or);width:18px"></i> Agoè Cacaveli, Lomé
+                    </li>
+                    <li style="margin-top:1rem"><a href="rendezvous.html" class="btn btn-or"
+                            style="padding:.5rem 1.25rem;font-size:.9rem">Prendre RDV</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Miralocks — Tous droits réservés</span>
+            <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/register-sw.js" defer></script>
+</body>
+
+</html>
